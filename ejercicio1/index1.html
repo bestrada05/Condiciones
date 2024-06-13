@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.ex1.ico"
+      type="image/x-icon"
+    />
+    <title>Imagen - ex1</title>
+    <script
+      src="https://kit.fontawesome.com/1a57bbbfe4.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="./assets/css/style1.css" />
+  </head>
+  <body>
+    <div>
+      <h2>Haz Click en la foto <i class="fa-regular fa-circle-right"></i></h2>
+      <img
+        src="./assets/img/averie-woodard-Av_NirIguEc-unsplash (1).jpg"
+        alt="playa"
+        id="foto"
+        onclick="
+
+        if (foto.style.border ==='none'){
+        foto.style.border = '2px solid red';
+    } else {
+        foto.style.border = 'none'
+    }
+        "
+      />
+    </div>
+
+    <script src="./assets/js/ex1.js"></script>
+  </body>
+</html>

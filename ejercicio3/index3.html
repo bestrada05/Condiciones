@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/faviconex3.ico"
+      type="image/x-icon"
+    />
+    <title>Password - ex3</title>
+    <script
+      src="https://kit.fontawesome.com/1a57bbbfe4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/css/style3.css" />
+  </head>
+  <body>
+    <div class="box">
+      <h1>Ingresa el Password</h1>
+      <i class="fa-solid fa-unlock"></i>
+      <div class="selectores">
+        <select name="" value="" id="opcion1">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+        </select>
+
+        <select name="" value="" id="opcion2">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+        </select>
+
+        <select name="" value="" id="opcion3">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+        </select>
+      </div>
+
+      <button
+        id="ingresar"
+        onclick="
+let numero1 = document.querySelector('#opcion1').value;
+let numero2 = document.querySelector('#opcion2').value;
+let numero3 = document.querySelector('#opcion3').value;
+
+let clave = numero1 + numero2 + numero3;
+
+if (clave === '911') {
+mensaje.innerHTML = 'El password 1 es correcto!';
+} else if ( clave === '714') {
+mensaje.innerHTML = 'El password 2 es correcto!';
+} else {
+  mensaje.innerHTML = 'El password es incorrecto, intenta nuevamente!';
+} "
+      >
+        Ingresar
+      </button>
+    </div>
+
+    <p id="mensaje">Resultado</p>
+
+    <script src="./assets/js/ex3.js"></script>
+  </body>
+</html>

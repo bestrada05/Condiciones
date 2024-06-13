@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Stcikers - ex2</title>
+    <script
+      src="https://kit.fontawesome.com/1a57bbbfe4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/css/style2.css" />
+  </head>
+  <body>
+    <main>
+      <nav>
+        <h1>
+          Selecciona tus Stickers favoritos
+          <i class="fa-regular fa-circle-check"></i>
+        </h1>
+      </nav>
+      <div class="contenedor">
+        <div class="sticker">
+          <img src="./assets/img/github1.png" alt="github" />
+          <input id="sticker1" value="" type="number" />
+        </div>
+
+        <div class="sticker">
+          <img src="./assets/img/Slack.png" alt="slack" />
+          <input id="sticker2" value="" type="number" />
+        </div>
+
+        <div class="sticker">
+          <img src="./assets/img/git.png" alt="git" />
+          <input id="sticker3" value="" type="number" />
+        </div>
+      </div>
+      <p id="mensaje"></p>
+      <button
+        id="verificar"
+        onclick="
+          let sticker1 = Number(document.querySelector('#sticker1').value);
+          let sticker2 = Number(document.querySelector('#sticker2').value);
+          let sticker3 = Number(document.querySelector('#sticker3').value);
+
+          let suma = sticker1 + sticker2 + sticker3;
+
+          if (suma <= 10){
+           mensaje.innerHTML = 'Has añadido ' + suma + ' stickers!'
+           mensaje.style.color = 'green';
+          } else {
+            mensaje.innerHTML = 'Te has excedido en los stickers!'
+            mensaje.style.color = 'red';
+          }"
+      >
+        Verificar
+      </button>
+    </main>
+    <script src="./assets/js/ex2.js"></script>
+  </body>
+</html>
