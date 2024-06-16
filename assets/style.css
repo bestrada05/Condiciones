@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+.boxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem;
+}
+
+.box {
+  width: 600px;
+  height: 200px;
+  margin: 2rem;
+  border-radius: 20px;
+  border: 3px solid #749d2d;
+  background-image: url(./desafioLatam.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+}
+
+button {
+  margin: 1rem;
+  width: 120px;
+  height: 30px;
+  background-color: #749d2d;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button a {
+  text-decoration: none;
+  color: black;
+}
